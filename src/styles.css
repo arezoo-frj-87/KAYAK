@@ -1,0 +1,144 @@
+.body {
+    background-color: #f9fafb;
+    height: 100vh;
+    width: 100vw;
+}
+.header {
+    background-color: #ffffff;
+}
+
+.logo {
+    margin-left: 16px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+}
+
+.container {
+    background-color: #f9fafb;
+}
+
+.h1 {
+    font-family: HelveticaNeue;
+    font-size: 44px;
+    font-weight: 900;
+    color: #000000;
+    margin-left: 94px;
+    margin-top: 67px;
+    margin-bottom: 73px;
+}
+
+.h4 {
+    margin-bottom: 23px;
+    margin-left: 94px;
+    color: #192024;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: bold;
+}
+.filter {
+    font-family: HelveticaNeue;
+    margin-bottom: 56px;
+    margin-left: 94px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #192024;
+}
+.checkBox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-left: 0px;
+}
+.label {
+    margin-right: 24px;
+}
+
+.card {
+    width: 300px;
+    height: 240px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 -1px 4px 0 rgba(25, 32, 36, 0.04),
+    0 3px 6px 0 rgba(25, 32, 36, 0.16);
+}
+
+.airline-name {
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: bold;
+    color: #192024;
+    margin-left: 18px;
+}
+
+.alliance {
+    font-family: HelveticaNeue;
+    font-weight: normal;
+    font-size: 14px;
+    color: #192024;
+}
+
+.site {
+    font-family: HelveticaNeue;
+    font-weight: normal;
+    font-size: 14px;
+    color: #5a6872;
+    text-decoration: none;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.message {
+    font-family: HelveticaNeue;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #5a6872;
+    margin-left: 94px;
+}
+.card-container {
+    display: grid;
+    grid-gap: 16px;
+    margin-left: 94px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .card-container {
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .card-container {
+        grid-template-columns: repeat(1, 300px);
+    }
+    .filter {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(4, 300px);
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(5, 300px);
+    }
+}
